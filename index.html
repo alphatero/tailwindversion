@@ -13,16 +13,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="icon" href="" sizes="32x32" />
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="js/allpage.js"></script>
+  <script src="js/slick.min.js"></script>
 
 </head>
 
-<body class="d-flex flex-column min-vh-100" data-no="-1">
+<body class="d-flex flex-column min-vh-100 text-regal-blue-500" data-no="-1">
   <header></header>
   <!--  main   -->
   <section id="sec1" class="mt-36">
-   
+    <div class="single-item">
+      <div class=" h-44 overflow-hidden bg-cover text-center text-7xl py-auto" style="background-image: url(image/slick1.png);"><h2>your content</h2></div>
+      <div class=" h-44 overflow-hidden bg-cover text-center text-7xl py-auto" style="background-image: url(image/slick1.png);"><h2>your xxx</h2></div>
+    </div>
   </section>
   <section id="sec2" class="mt-36">
     <div class="w-full max-w-7xl mx-auto mb-10">
@@ -30,22 +38,22 @@
       </h1>
     </div>
     <div class="w-full max-w-7xl mx-auto flex flex-row justify-evenly">
-      <div class="border rounded-xl border-black h-44 w-44 overflow-hidden">
-        <img class="h-full" src="../public/image/main-1.jpg" alt="">
+      <div class="border rounded-xl border-black h-44 w-48 overflow-hidden transform transition duration-300 hover:scale-110">
+        <img class="bg-cover" src="image/main-1.jpg" alt="">
       </div>
-            <div class="border rounded-xl border-black h-44 w-44 overflow-hidden">
-        <img class="h-full" src="../public/image/main-1.jpg" alt="">
-      </div>            <div class="border rounded-xl border-black h-44 w-44 overflow-hidden">
-        <img class="h-full" src="../public/image/main-1.jpg" alt="">
-      </div>            <div class="border rounded-xl border-black h-44 w-44 overflow-hidden">
-        <img class="h-full" src="../public/image/main-1.jpg" alt="">
+            <div class="border rounded-xl border-black h-44 w-48 overflow-hidden">
+        <img class="h-full" src="image/product2.png" alt="">
+      </div>            <div class="border rounded-xl border-black h-44 w-48 overflow-hidden">
+        <img class="h-full" src="image/product3.png" alt="">
+      </div>            <div class="border rounded-xl border-black h-44 w-48 overflow-hidden">
+        <img class="h-full" src="image/product4.png" alt="">
       </div>
       
     </div>
     <div class="w-full max-w-7xl mx-auto mt-10 text-center">
-      <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-full">
+      <a href="products.html" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-full" >
         查看更多
-      </button>
+      </a>
     </div>
   </section>
   <section id="sec3">
@@ -63,12 +71,12 @@
       </h1>
     </div>
     <div class="w-full max-w-4xl mx-auto my-10 flex flex-wrap justify-evenly">
-      <div><img src="/public/image/Group 26.png" alt=""></div>
-      <div class="content-center"> <img class="object-none object-center h-full" src="/public/image/Image 2.png" alt=""></div>
-      <div class="content-center"> <img class="object-none object-center h-full" src="/public/image/Image 6.png" alt=""></div>
-      <div class="content-center"> <img class="object-none object-center h-full" src="/public/image/Image 3.png" alt=""></div>
-      <div class="content-center"> <img class="object-none object-center h-full" src="/public/image/Image 4.png" alt=""></div>
-      <div class="content-center"> <img class="object-none object-center h-full" src="/public/image/partner.png" alt=""></div>
+      <div><img src="image/Group 26.png" alt=""></div>
+      <div class="content-center"> <img class="object-none object-center h-full" src="image/Image 2.png" alt=""></div>
+      <div class="content-center"> <img class="object-none object-center h-full" src="image/Image 6.png" alt=""></div>
+      <div class="content-center"> <img class="object-none object-center h-full" src="image/Image 3.png" alt=""></div>
+      <div class="content-center"> <img class="object-none object-center h-full" src="image/Image 4.png" alt=""></div>
+      <div class="content-center"> <img class="object-none object-center h-full" src="image/partner.png" alt=""></div>
       
       
     </div>
@@ -78,5 +86,18 @@
   <footer class="mt-5">
   </footer>
 </body>
+<script>
 
+$('.single-item').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+</script>
+<style>
+  .slick-slide {
+    height: 500px;
+  }
+</style>
 </html>
