@@ -11,5 +11,12 @@
         @apply text-lg;
     }
 }
+
 @tailwind components; 
 @tailwind utilities;
+
+@layer utilities {
+    .textIndent {
+        text-indent:2em;
+    }
+}

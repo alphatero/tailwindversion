@@ -8,9 +8,9 @@
         <div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
             <ul class="list-reset flex justify-between flex-1 md:flex-none items-center text-xl">
               <li class="mr-3">
-                <a class="inline-block py-2 px-4 text-black no-underline border-black border-b-2" href="about.html">關於我們</a>
+                <a class="inline-block text-gray-600 no-underline hover:text-black hover:text-underline py-2 px-4" href="about.html">關於我們</a>
               </li>
-              <li class="mr-3">
+              <li class="mr-3 ">
                 <a class="inline-block text-gray-600 no-underline hover:text-black hover:text-underline py-2 px-4" href="products.html">產品介紹</a>
               </li>
                         <li class="mr-3">
@@ -29,3 +29,21 @@
         </div>
     </div>
 </nav>
+
+<script>
+  var no = $('body').attr('data-no');
+  $('header nav li>a').eq(no).addClass('text-black');
+  $('header nav li>a').eq(no).removeClass('text-gray-600');
+  $('header nav li>a').eq(no).addClass('no-underline');
+  $('header nav li>a').eq(no).addClass('border-black');
+  $('header nav li>a').eq(no).addClass('border-b-2');
+  // $('header nav li>a').eq(no).addClass('active');
+  $(document).ready(function () {
+      // executes when HTML-Document is loaded and DOM is ready
+      // breakpoint and up  
+      $('#nav-icon').click(function () {
+          $(this).toggleClass('open');
+      });
+      // document ready  
+  });
+</script>

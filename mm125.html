@@ -80,7 +80,7 @@
                 <img src="image/mm125/mm125_2.jpg">
                 
               </div>               -->
-              <div class="text-center text-7xl py-auto px-5">
+              <div class="text-center text-7xl py-auto px-5 overflow-hidden">
                 <img src="image/mm125/mm125_2.jpg">
                 
               </div>               
@@ -101,8 +101,8 @@
 
         </div>      
         <div class="col-span-6">
-          <p>            mm125系列是手持式充電池供電的銅箔基板檢測儀。具有數位顯示功能與多種Oz值顯示的擴充性,能夠精確並快速顯示測量PCB銅箔厚度之Oz值檢測儀，不受底層玻纖板的厚度影響，量測數據精確且穩定性高。<br><br>產品特色:<br>
-            微電阻式量測、低誤差、清晰OLED 顯示器、操作簡易攜帶方便、無須標準片校正、內鍵環保充電電池亦可連接AC電源操作</p>
+          <p class="text-2xl leading-10 textIndent" >            mm125系列是手持式充電池供電的銅箔基板檢測儀。具有數位顯示功能與多種Oz值顯示的擴充性,能夠精確並快速顯示測量PCB銅箔厚度之Oz值檢測儀，不受底層玻纖板的厚度影響，量測數據精確且穩定性高。<br><br><span class="text-xl">產品特色:<br>
+            微電阻式量測、低誤差、清晰OLED 顯示器、操作簡易攜帶方便、無須標準片校正、內鍵環保充電電池亦可連接AC電源操作</span> </p>
         </div>
       </div>
       <div class="w-full max-w-7xl mx-auto grid grid-cols-12 my-10">
@@ -180,10 +180,13 @@ $('.slider-nav').slick({
     }
     .slider-nav .slick-slide img {
       height: 150px;
-      
+      width: auto;
+      border: solid 1px rgba(0, 0, 0, 0.1); 
     }
     .slider-nav .slick-slide {
       overflow: hidden;
+      /* border: solid 1px #000; */
+      height: 150px;
     }
   </style>
 </html>
